@@ -1,7 +1,19 @@
-//Andrea Paniagua, Jenniver Sandoval
-//18733, 18962
+
+
+/**
+ *
+ * @author Andrea Paniagua, Jennifer Sandoval
+ * Carne: 18733, 18962
+ * GnomeSort.java
+ * <p> Este es una clase que contiene un ordenamiento de numeros de tipo gnome</p>
+ */
 public class GnomeSort {
 
+    /**
+     *
+     * @param number
+     * @return
+     */
     public int[] GnomeSort(int number[]) {
         int posicion = 1;
         while (posicion < number.length){

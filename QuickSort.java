@@ -1,7 +1,14 @@
-//Andrea Paniagua, Jenniver Sandoval
-//18733, 18962
+
+
+/**
+ *
+ * @author Andrea Paniagua, Jennifer  Sandoval
+ * Carne: 18733, 18962
+ * QuickSort.java
+ * <p>Esta es una clase con el metodo de ordenamiento de numeros de tipo Quick </p>
+ */
 public class QuickSort {
-    int partition(int arr[], int low, int high) {
+    public int partition(int arr[], int low, int high) {
         int pivot = arr[high];
         int i = (low-1);
         for (int j=low; j<high; j++){
@@ -19,7 +26,7 @@ public class QuickSort {
         return i+1;
     }
 
-    void sort(int arr[], int low, int high){
+   public void sort(int arr[], int low, int high){
         if (low < high){
             int pi = partition(arr, low, high);
             sort(arr, low, pi-1);

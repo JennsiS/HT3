@@ -1,10 +1,21 @@
-//Andrea Paniagua, Jenniver Sandoval
-//18733, 18962
+
 import java.util.Arrays;
 
+/**
+ *
+ * @author Andrea Paniagua, Jennifer Sandoval 
+ * Carne: 18733, 18962
+ * RadixSort.java
+ * <p>Esta clase tiene un metodo de ordenamiento de numeros de tipo Radix </p>
+ */
 public class RadixSort {
 
-
+    /**
+     *
+     * @param arr
+     * @param n
+     * @return
+     */
     public int getMax (int arr[], int n){
         int mx = arr[0];
         for (int i = 1; i < n; i++){
@@ -15,6 +26,12 @@ public class RadixSort {
         return mx;
     }
 
+    /**
+     *
+     * @param arr
+     * @param n
+     * @param exp
+     */
     public void countSort(int arr[], int n, int exp) {
         int output[] = new int[n];
         int i;
@@ -39,6 +56,11 @@ public class RadixSort {
         }
     }
 
+    /**
+     *
+     * @param arr
+     * @param n
+     */
     public void radixSort(int arr[], int n){
         int m = this.getMax(arr, n);
 
