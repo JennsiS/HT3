@@ -1,10 +1,9 @@
-
-
 /**
  *
  * @author Andrea Paniagua, Jennifer Sandoval
  * Carne: 18733, 18962
  * GnomeSort.java
+ * Referencia: https://www.geeksforgeeks.org/gnome-sort-a-stupid-one/
  * <p> Este es una clase que contiene un ordenamiento de numeros de tipo gnome</p>
  */
 public class GnomeSort {

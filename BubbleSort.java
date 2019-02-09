@@ -3,6 +3,7 @@
  * @author Andrea Paniagua, Jennifer Sandoval
  * Carne: 18733, 18962
  * BubbleSort.java
+ * Referencia: https://www.geeksforgeeks.org/bubble-sort/
  * <p> Esta clase es un Sort de tipo Bubble. Es el Sort de algoritmos mas simple, hace swap 3
  * veces hasta que no tiene ningun elemto que ordenar</p>
  */

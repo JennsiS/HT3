@@ -1,10 +1,9 @@
-
-
 /**
  *
  * @author Andrea Paniagua, Jennifer Sandoval
  * Carne: 18733,18962
  * MergeSort.java
+ * referencia:https://www.geeksforgeeks.org/merge-sort/
  * <p>Esta es una clase que contiene el metodo de ordenamiento de numeros de tipo merge </p>
  */
 public class MergeSort {

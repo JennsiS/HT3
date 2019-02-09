@@ -1,11 +1,11 @@
-
 import java.util.Arrays;
 
 /**
  *
- * @author Andrea Paniagua, Jennifer Sandoval 
+ * @author Andrea Paniagua, Jennifer Sandoval
  * Carne: 18733, 18962
  * RadixSort.java
+ * Referencia: https://www.geeksforgeeks.org/radix-sort/
  * <p>Esta clase tiene un metodo de ordenamiento de numeros de tipo Radix </p>
  */
 public class RadixSort {
