@@ -9,26 +9,35 @@
 public class GnomeSort {
 
     /**
-     *
-     * @param number
+     * @param arr,low,high
      * @return
      */
-    public int[] GnomeSort(int number[]) {
-        int posicion = 1;
-        while (posicion < number.length){
-            if(number[posicion] >= number[posicion - 1]) {
-                posicion++;
-            }
-            else {
-                int temp = number[posicion];
-                number[posicion] = number[posicion - 1];
-                number[posicion - 1] = temp;
-                if(posicion > 1) {
-                    posicion--;
-                }
-            }
+    public void quickSort(Comparable arr[], int low, int high){ //comparable
+        if (low < high){
+            //si low rs menor que high ejecuta esto
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi-1);
+            quickSort(arr, pi+1, high);
         }
-        return number;
     }
 
+    int partition(Comparable arr[], int low, int high) {
+        Comparable pivot = arr[high]; //se crea pivot por necesidad de clase
+        int i = (low-1);
+        for (int j=low; j<high; j++){
+            if (arr[j].compareTo(pivot) < 0){
+                i++;
+                Comparable temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        Comparable temp = arr[i+1];
+        arr[i+1] = arr[high];
+        arr[high] = temp;
+
+        return i+1; //se regresa lo que de mas uno.
+    }
 }
+
+
